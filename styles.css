@@ -1,0 +1,445 @@
+
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+    --primary-color: #fa7500;
+    --secondary-color: #292929;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+form {
+    font-size: 1.25em;
+}
+
+a, u {
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    height: 150vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 0.5fr 1.5fr 0.5fr 2fr 0.8fr;
+    grid-template-areas: 
+        "main1 main1 main2 main2"
+        "aboutheader aboutheader aboutheader aboutheader"
+        "about1 about2 about3 about4"
+        "contactheader contactheader contactheader contactheader"
+        "contact1 contact1 contact1 contact1"
+        "footer footer footer footer"
+    ;
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main1 {
+    grid-area: main1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.herotitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.herobuttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#main2 {
+    grid-area: main2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+/* ABOUT SECTION    */
+
+
+#aboutheader {
+    grid-area: aboutheader;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    background-color: #f2f2f2;
+}
+
+.abouth1 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.about1heading {
+    display: flex;
+    justify-content: center;
+}
+
+.about1p {
+    text-align: center;
+    margin-left: 10%;   
+    margin-right: 10%;
+}
+
+.laptopsvg {
+    width: 100%;
+    max-width: 300px;
+}
+
+.abouth2 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.about2heading {
+    display: flex;
+    justify-content: center;
+}
+
+.about2p {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Camerasvg {
+    width: 100%;
+    max-width: 300px;
+}
+
+.abouth3 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.about3heading {
+    display: flex;
+    justify-content: center;
+}
+
+.about3p {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Phonesvg {
+    width: 100%;
+    max-width: 300px;
+}
+
+.abouth4 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.about4heading {
+    display: flex;
+    justify-content: center;
+}
+
+.about4p {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Computersvg {
+    width: 100%;
+    max-width: 300px;
+}
+
+#about1 {
+    background-color: #f2f2f2;
+    grid-area: about1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    text-align: center;
+}
+
+#about2 {
+    background-color: #f2f2f2;
+    grid-area: about2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    text-align: center;
+}
+
+#about3 {
+    background-color: #f2f2f2;
+    grid-area: about3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    text-align: center;
+}
+
+#about4 {
+    background-color: #f2f2f2;
+    grid-area: about4;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    text-align: center;
+}
+
+
+/* CONTACT SECTION */
+
+
+#contactheader {
+    grid-area: contactheader;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.contacth1 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#contact1 {
+    grid-area: contact1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+
+  .contactcontainer {
+    border-radius: 5px;
+    
+    padding: 20px;
+    display: block;
+    text-align: center;
+  } 
+
+  form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+
+
+
+
+footer {
+    background-color: #f2f2f2;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    padding: 50px;
+    text-align: center;
+}
+
+.heroHS {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.headshot {
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+    max-width: 500px;
+    border-radius: 50%;
+}
+
+
+
+/* BUTTONS */
+
+.button-23 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-23:hover,
+.button-23:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-23:active {
+  opacity: .5;
+}
+
+
+/* Button 2 */
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+/*SUBMIT BUTTON*/
+.form-submit-button {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+  .form-submit-button-24:hover,
+  .form-submit-button-24:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+  }
+  
+  .form-submit-button-24:active {
+    opacity: .5;
+  }
+  
+
+
+@media only screen and (max-width: 850px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100fr 100fr 25fr 50fr 50fr 25fr 100fr 50fr;
+        grid-template-areas: 
+            "main2 main2"
+            "main1 main1"
+            "aboutheader aboutheader"
+            "about1 about2"
+            "about3 about4"
+            "contactheader contactheader"
+            "contact1 contact1"
+            "footer footer"
+        ;
+    }
+
+    .heroHS {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .headshot {
+        width: 50%;
+        max-width: 600px;
+        height: auto;
+    }
+
+
+}
